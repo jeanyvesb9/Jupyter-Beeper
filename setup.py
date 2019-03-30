@@ -9,14 +9,14 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='Jupyter-Beeper',
-    version='1.0.1',
+    version='1.0.2',
     author="Jean Yves Beaucamp (@jeanyvesb9)",
     author_email="jeanyvesb9@me.com",
     description="A beep generator for Jupyter Notebooks (and Jupyter-Lab) that doesn't display an audio reproduction widget.",
     long_description=long_description,
     long_description_content_type='text/markdown',
     url="https://github.com/jeanyvesb9/Jupyter-Beeper",
-    packages=['Jupyter-Beeper'],
+    packages=['jupyter_beeper'],
     keywords='beep beeper sounds ipython jupyter',
     install_requires=['ipython', 'numpy'],
 )
