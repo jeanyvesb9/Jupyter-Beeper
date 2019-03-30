@@ -16,7 +16,7 @@ class InvisibleAudio(Audio):
 class Beeper:
     ''' Makes sound on client using javascript (works with remote server) '''
     def __init__(self):
-        self.id = random.randint(0, 10000000000000000000)
+        self.id = _rand.randint(0, 10000000000000000000)
         display(HTML(""), display_id=str(self.id))
 
     def beep(self, frequency=440, secs=0.05, blocking=False):
@@ -32,7 +32,7 @@ class Beeper:
         '''
         framerate = 44100
         t = _np.linspace(0, secs, int(framerate * secs))
-        data = _np.sin(2 * np.pi * frequency * t)
+        data = _np.sin(2 * _np.pi * frequency * t)
 
         self.beeper = InvisibleAudio(data, rate=framerate, autoplay=True)
         display(self.beeper, display_id=str(self.id), update=True)

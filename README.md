@@ -6,9 +6,9 @@ This library was created to solve an ongoing problem originated when creating mu
 ## Usage
 
 ```python
-import Beeper
+import jupyter_beeper
 
-b = Beeper()
+b = jupyter_beeper.Beeper()
 
 # Default config is frequency=440 Hz, secs=0.7 seconds, and
 # blocking=False (b.beep() will return when the sound begins)
