@@ -16,7 +16,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url="https://github.com/jeanyvesb9/Jupyter-Beeper",
-    packages=['Jupyter-Beeper'],
+    packages=['jupyter_beeper'],
     keywords='beep beeper sounds ipython jupyter',
     install_requires=['ipython', 'numpy'],
 )
